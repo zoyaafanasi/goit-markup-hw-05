@@ -457,3 +457,37 @@ img {
 .footer-svg {
   fill: #f4f4fd;
 }
+.e-mail-input {
+  margin-left: 80px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 453px;
+
+  margin-left: 80px;
+}
+.form-label {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.form-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: inherit;
+}
+.input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.input:placeholder-shown {
+  border-color: blue;
+}
