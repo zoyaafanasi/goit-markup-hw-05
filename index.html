@@ -579,21 +579,24 @@
     <div class="modal-overlay">
       <div class="modal">
         <p class="modal-p">Leave your contacts and we will call you back</p>
-        <div class="modal-input-block">
-          <label class="modal-label">
-            Name
-            <div class="modal-input">
-              <input type="text" name="name" placeholder="" />
-            </div>
-          </label>
-        </div>
-        <div class="modal-input-block">
-          <label class="modal-label">
-            Phone
-            <div class="modal-input">
-              <input type="tel" name="phone" placeholder="" />
-            </div>
-          </label>
+        <div class="all-inputs">
+          <div class="modal-input-block">
+            <label class="modal-label">
+              Name
+              <div class="modal-input">
+                <input type="text" name="name" placeholder="" />
+              </div>
+            </label>
+          </div>
+          <div class="modal-input-block">
+            <label div class="modal-label">
+              Phone
+              <div class="modal-input">
+                <input type="tel" name="phone" placeholder="" />
+              </div>
+            </label>
+          </div>
+
           <div class="modal-input-block">
             <label class="modal-label">
               Email
@@ -602,21 +605,28 @@
               </div>
             </label>
           </div>
-        
-        <label>
-          Comment
 
-          <textarea
-            name="feedback"
-            rows="5"
-            placeholder="Text input"
-          ></textarea>
-        </label>
-        <label>
-          <input type="checkbox" name="acceotion" value="" />
-          I accept the terms and conditions of the Privacy Policy
-        </label>
-        <button class="button-modal" type="button">Send</button>
+          <label class="modal-label">
+            Comment
+
+            <textarea
+              class="textarea"
+              name="feedback"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+        </div>
+        <div class="checkbox">
+          <label class="modal-label">
+            <input type="checkbox" name="acceotion" value="" />
+            I accept the terms and conditions of the
+            <span class="privacy-policy">Privacy Policy</span>
+          </label>
+        </div>
+        <div class="button-modal-div">
+          <button class="button-modal" type="button">Send</button>
+        </div>
       </div>
     </div>
   </body>
