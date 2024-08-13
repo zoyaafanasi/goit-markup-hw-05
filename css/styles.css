@@ -479,7 +479,13 @@ img {
   stroke: rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.btn-close:hover > svg,
+.btn-close:focus > svg {
+  fill: #ffffff;
+}
+
 .input-p {
   margin-bottom: 16px;
   font-weight: 500;
@@ -610,13 +616,7 @@ img {
   padding-top: 80px;
   margin-bottom: 16px;
 }
-.all-inputs {
-  border-radius: 4px;
-  width: 360px;
-  height: 336px;
-  padding: 0 24px;
-  margin-bottom: 8px;
-}
+
 .modal-input-block {
   width: 360px;
   height: 58px;
