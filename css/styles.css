@@ -529,8 +529,13 @@ img {
   align-items: center;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  pointer-events: none;
 }
-
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -555,7 +560,7 @@ img {
   align-items: center;
   border-radius: 4px;
   padding: 16px 32px;
-
+  display: flex;
   width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -567,6 +572,9 @@ img {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
 }
 .modal-p {
   display: flex;
@@ -592,6 +600,12 @@ img {
   width: 360px;
   height: 58px;
 }
+.input-frame {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
 .modal-label {
   font-weight: 400;
   font-size: 12px;
@@ -613,9 +627,14 @@ img {
   border-radius: 4px;
   width: 360px;
   height: 16px;
-  display: inline-block;
+  display: inline-flex;
   padding: 0 24px;
   margin-bottom: 24px;
+
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
 .privacy-policy {
@@ -623,4 +642,9 @@ img {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+}
+.input-overlay-svg {
+  padding: 3px 0px;
+  width: 18px;
+  height: 24px;
 }
