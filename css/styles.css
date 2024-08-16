@@ -594,6 +594,10 @@ img {
   padding-left: 119px;
   padding-right: 120;
 }
+.button-modal-div {
+  margin-bottom: 16px;
+  padding-left: 119px;
+}
 .button-modal {
   display: block;
   justify-content: center;
@@ -611,7 +615,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #fffff;
+  color: #fff;
   cursor: pointer;
   border: none;
   position: absolute;
@@ -728,6 +732,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #4d5ae5;
 }
 .input-overlay-svg:focus {
   fill: #4d5ae5;
@@ -751,8 +756,19 @@ img {
   visibility: hidden;
 }
 .check-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
-.input-chek: checked~.modal-label-chek .check-span {
+.input-chek:checked ~ .modal-label-chek .check-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
