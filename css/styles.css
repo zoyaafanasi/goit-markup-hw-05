@@ -467,7 +467,6 @@ img {
   cursor: pointer;
   width: 24px;
   height: 24px;
-
   border-radius: 50%;
   top: 24px;
   right: 24px;
@@ -486,7 +485,10 @@ img {
   background-color: #404bbf;
   border: none;
 }
-
+.btn-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
 .btn-close:hover > svg,
 .btn-close:focus > svg {
   fill: #ffffff;
