@@ -338,6 +338,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 .portfolio-section {
   padding: 120px 0;
@@ -617,7 +618,7 @@ img {
   color: #fff;
   cursor: pointer;
   border: none;
-  position: absolute;
+
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -720,7 +721,6 @@ img {
 }
 
 .form-overlay {
-  padding: 0 24px;
 }
 .modal-input {
   position: relative;
@@ -731,7 +731,6 @@ img {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #4d5ae5;
 }
 .input-overlay-svg:focus {
   fill: #4d5ae5;
