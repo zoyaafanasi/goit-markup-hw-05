@@ -703,22 +703,12 @@ img {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
 }
 .input-overlay-svg {
   padding: 3px 0px;
   width: 18px;
   height: 24px;
-  fill: #4D5AE5; gi
+  fill: #2e2f42;
 }
 
 .form-overlay {
@@ -733,7 +723,7 @@ img {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-overlay-svg:focus {
+.input-frame:focus .input-overlay-svg {
   fill: #4d5ae5;
 }
 .textarea-div {
